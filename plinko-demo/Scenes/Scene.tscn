@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://ce60vtf6tpq12"]
+
+[ext_resource type="Script" path="res://addons/2d_shapes/shapes/Ellipse.gd" id="1_468jp"]
+[ext_resource type="Script" path="res://addons/2d_shapes/shapes/Rectangle.gd" id="2_ctusm"]
+
+[node name="Scene" type="Node2D"]
+
+[node name="Player" type="Node2D" parent="."]
+
+[node name="Ellipse" type="Node2D" parent="Player"]
+script = ExtResource("1_468jp")
+
+[node name="Rectangle" type="Node2D" parent="Player/Ellipse"]
+position = Vector2(243, 290)
+script = ExtResource("2_ctusm")
+
+[node name="Rectangle2" type="Node2D" parent="Player/Ellipse"]
+position = Vector2(413, 134)
+script = ExtResource("2_ctusm")
